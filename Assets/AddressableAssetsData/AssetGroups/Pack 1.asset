@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Pack 1
+  m_EditorClassIdentifier: 
+  m_GroupName: Pack 1
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8511251bc4af96d449d725c05ada6f45
+  m_SerializeEntries:
+  - m_GUID: a1352970693889f41ae72812699bbf5b
+    m_Address: Assets/MAIN GAME/MANAGER/Addressable/address_1.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Label 1
+    m_MainAsset: {fileID: 102900000, guid: a1352970693889f41ae72812699bbf5b, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: a1352970693889f41ae72812699bbf5b, type: 3}
+  - m_GUID: 9daa3389506ec464f90f947566c38d41
+    m_Address: Assets/MAIN GAME/MANAGER/Addressable/Image.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Label 1
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 78cd25ba8ce67eb4eb4ff49a753ca5f1
+    m_Address: Assets/MAIN GAME/MANAGER/Addressable/unityicon.png
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Label 1
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 2bc2984386836164f8cde261cdc3b359
+    m_Address: Assets/MAIN GAME/MANAGER/Addressable/address_4
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Label 1
+    m_MainAsset: {fileID: 102900000, guid: 2bc2984386836164f8cde261cdc3b359, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 2bc2984386836164f8cde261cdc3b359, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 276a3dc8a0a227c488104ec010b5a88a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: d5f63485bc1152e439072c61062a4a79, type: 2}
+    - {fileID: 11400000, guid: 0f72d5ac152590144876f0615724f543, type: 2}

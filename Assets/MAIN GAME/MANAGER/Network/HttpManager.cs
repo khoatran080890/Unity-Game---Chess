@@ -7,6 +7,13 @@ using UnityEngine;
 
 public class HttpManager : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            SendAPI((res)=> { });
+        }
+    }
     /// <summary>
     /// Example
     /// </summary>
@@ -18,7 +25,7 @@ public class HttpManager : MonoBehaviour
         requestParams.Add("device_model", SystemInfo.deviceModel);
         requestParams.Add("device_os", SystemInfo.operatingSystem);
 
-        DoConnect("api/logs/insert_device", requestParams, (json) =>
+        DoConnect("abc", requestParams, (json) =>
         {
             JsonReader reader = new JsonReader(json);
             HTTPResponse_1 loginRes = JsonMapper.ToObject<HTTPResponse_1>(reader);
@@ -32,7 +39,7 @@ public class HttpManager : MonoBehaviour
     /// </summary>
     public void DoConnect(string path, Dictionary<string, object> requestParams, Action<string> callback = null, Action<string> onError = null)
     {
-        string fullURL = "http://testmilu2.milu.jp" + ":" + 8081 + "/" + path;
+        string fullURL = "http://localhost" + ":" + 8080 + "/" + path;
         var request = new HTTPRequest(new Uri(fullURL), (req, res) => { onRequestCallBack(req, res, callback, onError); });
         //add Header 
         string svcCredentials = Convert.ToBase64String(ASCIIEncoding.ASCII.GetBytes("milu2_admin" + ":" + "mlml246"));
