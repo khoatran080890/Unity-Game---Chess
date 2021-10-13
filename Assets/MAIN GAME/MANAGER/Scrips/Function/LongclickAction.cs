@@ -8,7 +8,7 @@ public class LongclickAction : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         Continuous,
         Once,
     }
-    public Action action;
+    public Action OnLongClickEvt;
 
     [SerializeField] float LongClickTime = 0.3f;
     [SerializeField] Type type;
@@ -101,6 +101,6 @@ public class LongclickAction : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     public void Button()
     {
         Debug.Log("Long Click");
-        action?.Invoke();
+        OnLongClickEvt?.Invoke();
     }
 }
