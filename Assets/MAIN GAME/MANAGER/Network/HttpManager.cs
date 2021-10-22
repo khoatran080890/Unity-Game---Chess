@@ -64,16 +64,16 @@ public class HttpManager : MonoBehaviour
     {
         if (response == null)
         {
-            Debug.LogError($"Request to {request} --> status code : {MLResultCode.RESPONSE_NULL} --> error: {response.DataAsText}" + " -- Link: " + request.CurrentUri.ToString());
+            Debug.LogError($"Request to {request} --> status code : {ResultCode.RESPONSE_NULL} --> error: {response.DataAsText}" + " -- Link: " + request.CurrentUri.ToString());
             return;
         }
-        MLResultCode resultCode = (MLResultCode)response.StatusCode;
-        if (resultCode == MLResultCode.SERVER_ERROR)
+        ResultCode resultCode = (ResultCode)response.StatusCode;
+        if (resultCode == ResultCode.SERVER_ERROR)
         {
             onError?.Invoke(response.DataAsText);
             return;
         }
-        if (resultCode != MLResultCode.OK)
+        if (resultCode != ResultCode.OK)
         {
             Debug.LogError($"Request to {request} --> status code : {resultCode} --> error: {response.DataAsText}" + " -- Link: " + request.CurrentUri.ToString());
             callback?.Invoke(response.DataAsText);

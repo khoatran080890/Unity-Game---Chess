@@ -4,33 +4,16 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class TEST : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler
+public class TEST : MonoBehaviour
 {
-    private Vector2 firstpos;
-    private Vector2 secondpos;
-    public Text debugtext;
-    public void OnPointerClick(PointerEventData eventData)
+
+    private void Awake()
     {
-        firstpos = eventData.position;
-        secondpos = eventData.position;
-    }
-    private void Update()
-    {
-        
-    }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        secondpos = eventData.position;
-        RotateCamera(secondpos - firstpos);
-        debugtext.text = (secondpos - firstpos).ToString();
+        GameObject loadingbar = Instantiate(Resources.Load<GameObject>("Loading Bar"));
+        loadingbar.transform.parent = transform;
     }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        secondpos = eventData.position;
-    }
-    void RotateCamera(Vector2 vector)
-    {
-        Camera.main.transform.eulerAngles = new Vector3(transform.eulerAngles.x + vector.y, transform.eulerAngles.x + vector.y, 0);
-    }
+
 }
+
+

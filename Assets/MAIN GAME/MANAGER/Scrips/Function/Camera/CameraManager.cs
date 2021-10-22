@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField] Transform camera;
+    [SerializeField] Transform maincamera;
     [SerializeField] Transform player;
     // Version 1
     [Tooltip("Area to touch for moving camera - if null defauld 1/2 right screen")]
@@ -27,14 +27,14 @@ public class CameraManager : MonoBehaviour
     private void Start()
     {
         // set up camera pos
-        camera.transform.localPosition = new Vector3(0, height, -distance);
+        maincamera.transform.localPosition = new Vector3(0, height, -distance);
 
         // set up left right pos
         R_finger_id = -1;
     }
     private void Update()
     {
-        camera.transform.localPosition = new Vector3(0, height, -distance);
+        maincamera.transform.localPosition = new Vector3(0, height, -distance);
 
         for (int i = 0; i < Input.touchCount; i++)
         {
@@ -85,7 +85,7 @@ public class CameraManager : MonoBehaviour
         if (R_finger_id != -1)
         {
             camera_rotation_x = Mathf.Clamp(camera_rotation_x - vector_moving.y, -max_angle_up, max_angle_down);
-            camera.localRotation = Quaternion.Euler(camera_rotation_x, 0, 0);
+            maincamera.localRotation = Quaternion.Euler(camera_rotation_x, 0, 0);
 
             player.Rotate(player.up, vector_moving.x);
         }

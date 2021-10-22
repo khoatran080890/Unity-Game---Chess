@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectPool : Singleton<ObjectPool>
 {
     [Serializable]
-    class ObjectInfo
+    public class ObjectInfo
     {
         public string id;
         public GameObject mainObj;
@@ -20,6 +20,10 @@ public class ObjectPool : Singleton<ObjectPool>
     // private
     
     private void Awake()
+    {
+        Init();
+    }
+    void Init()
     {
         for (int i = 0; i < objs.Length; i++)
         {
@@ -36,6 +40,11 @@ public class ObjectPool : Singleton<ObjectPool>
         objectinfo.lstmainObj.Add(obj);
         obj.SetActive(active);
         action?.Invoke(obj);
+    }
+    public void SetupObjectPool(ObjectInfo[] objectinfo_array)
+    {
+        objs = objectinfo_array;
+        Init();
     }
     public GameObject GetfromPool(string id)
     {

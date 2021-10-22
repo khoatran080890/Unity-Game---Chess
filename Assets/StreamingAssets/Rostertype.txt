@@ -1,0 +1,5 @@
+id	name	flydistant
+110001	infantry melee	
+110002	infantry missle	
+110011	flyer melee	
+110012	flye missle	

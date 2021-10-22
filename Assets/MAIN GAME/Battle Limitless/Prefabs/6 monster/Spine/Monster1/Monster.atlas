@@ -1,0 +1,97 @@
+
+Monster.png
+size: 751,317
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 560, 190
+  size: 151, 125
+  orig: 151, 125
+  offset: 0, 0
+  index: -1
+Box
+  rotate: false
+  xy: 2, 7
+  size: 422, 308
+  orig: 422, 308
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 426, 170
+  size: 132, 145
+  orig: 132, 145
+  offset: 0, 0
+  index: -1
+Head2
+  rotate: false
+  xy: 426, 23
+  size: 132, 145
+  orig: 132, 145
+  offset: 0, 0
+  index: -1
+Leg_B1
+  rotate: false
+  xy: 681, 9
+  size: 48, 58
+  orig: 48, 58
+  offset: 0, 0
+  index: -1
+Leg_B2
+  rotate: true
+  xy: 616, 148
+  size: 40, 45
+  orig: 40, 45
+  offset: 0, 0
+  index: -1
+Leg_F1
+  rotate: true
+  xy: 560, 12
+  size: 55, 67
+  orig: 56, 67
+  offset: 0, 0
+  index: -1
+Leg_F2
+  rotate: false
+  xy: 629, 9
+  size: 50, 58
+  orig: 50, 58
+  offset: 0, 0
+  index: -1
+Neck
+  rotate: true
+  xy: 560, 149
+  size: 39, 54
+  orig: 39, 54
+  offset: 0, 0
+  index: -1
+S_Attack
+  rotate: true
+  xy: 713, 145
+  size: 170, 36
+  orig: 170, 36
+  offset: 0, 0
+  index: -1
+S_Idle
+  rotate: false
+  xy: 560, 107
+  size: 170, 36
+  orig: 170, 36
+  offset: 0, 0
+  index: -1
+S_Walk
+  rotate: false
+  xy: 560, 69
+  size: 170, 36
+  orig: 170, 36
+  offset: 0, 0
+  index: -1
+Tails
+  rotate: false
+  xy: 426, 2
+  size: 30, 19
+  orig: 31, 19
+  offset: 0, 0
+  index: -1

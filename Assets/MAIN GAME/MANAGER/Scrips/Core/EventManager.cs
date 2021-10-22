@@ -41,6 +41,23 @@ public class EventManager : Singleton<EventManager>
             }
         }
     }
+    public void RemoveEvent(IEventRegisterObject listener, string eventname = "")
+    {
+        if (eventname == "")
+        {
+            foreach (var obj_dic in dic)
+            {
+                obj_dic.Value.Remove(listener);
+            }
+        }
+        else
+        {
+            if (dic.TryGetValue(eventname, out List<IEventRegisterObject> list))
+            {
+                list.Remove(listener);
+            }
+        }
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
