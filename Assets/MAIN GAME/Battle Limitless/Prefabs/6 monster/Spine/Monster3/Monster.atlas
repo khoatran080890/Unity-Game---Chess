@@ -1,0 +1,62 @@
+
+Monster.png
+size: 702,312
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 426, 24
+  size: 145, 148
+  orig: 145, 148
+  offset: 0, 0
+  index: -1
+Box
+  rotate: false
+  xy: 2, 2
+  size: 422, 308
+  orig: 422, 308
+  offset: 0, 0
+  index: -1
+Hair
+  rotate: true
+  xy: 573, 19
+  size: 76, 62
+  orig: 76, 62
+  offset: 0, 0
+  index: -1
+Hand_B1
+  rotate: true
+  xy: 426, 174
+  size: 136, 223
+  orig: 136, 223
+  offset: 0, 0
+  index: -1
+Hand_B2
+  rotate: true
+  xy: 573, 97
+  size: 75, 79
+  orig: 75, 79
+  offset: 0, 0
+  index: -1
+Hand_F
+  rotate: true
+  xy: 637, 40
+  size: 55, 63
+  orig: 55, 64
+  offset: 0, 1
+  index: -1
+Leg_B
+  rotate: true
+  xy: 651, 249
+  size: 61, 38
+  orig: 62, 38
+  offset: 0, 0
+  index: -1
+Leg_F
+  rotate: true
+  xy: 651, 186
+  size: 61, 38
+  orig: 62, 38
+  offset: 0, 0
+  index: -1

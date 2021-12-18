@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Config
+  m_EditorClassIdentifier: 
+  m_GroupName: Config
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 896ce73c64a54904294da3dd48d76c8a
+  m_SerializeEntries:
+  - m_GUID: 07a9e8c6e4592994ca8919fa81669595
+    m_Address: Assets/Addressable Container/Config/Roster.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  - m_GUID: 1538866b8ff8cf343b601af189d40eec
+    m_Address: Assets/Addressable Container/Config/Rostertype.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  - m_GUID: c4438a2260c206643af37b13bb6bbf9d
+    m_Address: Assets/Addressable Container/Config/Missle.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  - m_GUID: 0f4a7a1dd21d2c742a7c4abe67f742c5
+    m_Address: Assets/Addressable Container/Config/Formation.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  - m_GUID: 5f84d9c4e66dd1f47b926abb8180e485
+    m_Address: Assets/Addressable Container/Config/Race.txt
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Config
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 276a3dc8a0a227c488104ec010b5a88a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 1ad8fc393b9ca7b4daeb8aa08d21266d, type: 2}
+    - {fileID: 11400000, guid: d74957f80d8af4b458602a778d92a746, type: 2}

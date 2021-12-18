@@ -1,0 +1,4 @@
+id	name	hp	attack	moventspeed	attackcooldown	attackrange	formation	rostertype	missletype
+100001	Minator	150	10	20	2	50	120001	110001	0
+100002	Bee	400	25	50	2	100	120001	110011	0
+100003	Wraith	100	10	15	2	800	120001	110002	130001

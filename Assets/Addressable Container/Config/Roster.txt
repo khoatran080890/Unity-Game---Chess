@@ -1,0 +1,4 @@
+id	name	unitsize	hp	leadership	attackrange	meleebase	meleepierce	misslebase	misslepierce	ammunition	charge	armour	attack	defend	moventspeed	attackcooldown	formation	rostertype	missletype	race	active	passive	shield	antilarge	chargedefend	causefear
+100001	shieldman	12	625	70	50	19	6	0	0	0	4	40	20	38	33	2	120001	110001	0	900001	0	20001	1	15	1	0
+100002	giantbird	1	4600	60	100	234	156	0	0	0	62	30	44	30	110	2	120001	110011	0	900001	0	20001				
+100003	archer	9	630	60	720	19	5	16	3	24	4	40	16	18	36	2	120001	110002	130001	900001	0	20001				

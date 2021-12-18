@@ -1,0 +1,6 @@
+id	name	valid	description
+900001	Paladin	1	This is race of hornor
+900002	Dark Cave	1	This is race in dark cave
+900003	Forest	0	This is race in forest
+900004	Element	0	This is race of element
+900005	Hunter	0	This is race of demon hunter

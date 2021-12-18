@@ -1,0 +1,55 @@
+
+Monster4.png
+size: 592,312
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 426, 159
+  size: 125, 151
+  orig: 125, 152
+  offset: 0, 1
+  index: -1
+Box
+  rotate: false
+  xy: 2, 2
+  size: 422, 308
+  orig: 422, 308
+  offset: 0, 0
+  index: -1
+Eye1
+  rotate: false
+  xy: 541, 107
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+Eye2
+  rotate: false
+  xy: 541, 55
+  size: 49, 50
+  orig: 49, 50
+  offset: 0, 0
+  index: -1
+Mouth
+  rotate: false
+  xy: 532, 7
+  size: 54, 46
+  orig: 55, 46
+  offset: 0, 0
+  index: -1
+Wing_B
+  rotate: false
+  xy: 426, 7
+  size: 104, 69
+  orig: 104, 69
+  offset: 0, 0
+  index: -1
+Wing_F
+  rotate: false
+  xy: 426, 78
+  size: 113, 79
+  orig: 113, 79
+  offset: 0, 0
+  index: -1

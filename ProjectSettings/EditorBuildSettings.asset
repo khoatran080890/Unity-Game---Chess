@@ -5,10 +5,24 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/TEST GAME/SCENE/TEST.unity
+    guid: 101659015fd1a23409bfa52f50725bc1
   - enabled: 1
     path: Assets/Scenes/Home.unity
     guid: dbcbaa3b72d233e41af5776c53bbad5c
   - enabled: 1
-    path: Assets/Scenes/Battle.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+    path: Assets/Scenes/Loading.unity
+    guid: be5de1c7f93764e4cb1a387ab995aa65
+  - enabled: 1
+    path: Assets/Scenes/Choose Race.unity
+    guid: b1ea7778bade54b4dac8694cbcc27c39
+  - enabled: 1
+    path: Assets/Scenes/Main Hall.unity
+    guid: 078f3c65cebb2a5439106b9381a54e1a
+  - enabled: 1
+    path: Assets/Scenes/Battle Limitless.unity
+    guid: e4fd908e0e6a47e46a8ea3ae80e92f96
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: a72eca1a0b4bc0d4ab0aa94bfdac3b8d,
+      type: 2}

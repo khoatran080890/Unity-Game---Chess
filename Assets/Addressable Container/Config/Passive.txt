@@ -1,0 +1,2 @@
+id	name	description
+20001	inner peace	plus 10 percent attack and 30 percent defend when hp lower than 50 percent

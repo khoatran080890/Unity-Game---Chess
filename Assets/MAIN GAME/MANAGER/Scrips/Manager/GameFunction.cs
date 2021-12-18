@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BestHTTP.JSON.LitJson;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,28 +7,22 @@ using UnityEngine.UI;
 
 public class GameFunction : Singleton<GameFunction>
 {
-
     /// <summary>
-    /// ScreenShot + delete old assign image
+    /// Debug
     /// </summary>
-    IEnumerator TakeScreenshot(Image image)
+    public void InputKeycode(KeyCode key, Action action)
     {
-        yield return new WaitForEndOfFrame();
-        try
+        if (Input.GetKeyDown(key))
         {
-            Destroy(image.sprite.texture);
-            Destroy(image.sprite);
+            action?.Invoke();
         }
-        catch (Exception e)
-        {
-            Debug.Log(e);
-        }
-        Texture2D texture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        texture.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
-        texture.LoadRawTextureData(texture.GetRawTextureData());
-        texture.Apply();
-
-        image.sprite = Sprite.Create(texture, new Rect(0, 0, Screen.width, Screen.height), new Vector2(0.5f, 0.5f));
+    } 
+    /// <summary>
+    /// Parse Enum
+    /// </summary>
+    public T Parse_StringEnum<T>(string name) where T : Enum
+    {
+        return (T)Enum.Parse(typeof(T), name);
     }
 
     /// <summary>
@@ -65,4 +60,70 @@ public class GameFunction : Singleton<GameFunction>
         }
     }
 
+    public string Parse_Byte_Filesizestring(long bytes)
+    {
+        string[] Suffix = { "B", "KB", "MB", "GB", "TB" };
+        int i;
+        double dblSByte = bytes;
+        for (i = 0; i < Suffix.Length && bytes >= 1024; i++, bytes /= 1024)
+        {
+            dblSByte = bytes / 1024.0;
+        }
+        return string.Format("{0:0.##} {1}", dblSByte, Suffix[i]);
+    }
+    public string Parse_String_Json<T>(T data)
+    {
+        return JsonMapper.ToJson(data);
+    }
+
+    #region RECTSRANSFOM
+    public void SetAnchorPreset(RectTransform rt, AnchorPreset type, float left = 0f, float right = 1f, float bot = 0f, float top = 1f)
+    {
+        switch (type)
+        {
+            case AnchorPreset.Fit:
+                rt.anchorMin = new Vector2(0, 0);
+                rt.anchorMax = new Vector2(1, 1);
+                break;
+            case AnchorPreset.Dynamic:
+                rt.anchorMin = new Vector2(left, bot);
+                rt.anchorMax = new Vector2(right, top);
+                break;
+            case AnchorPreset.Center:
+                rt.anchorMin = new Vector2(0.5f, 0.5f);
+                rt.anchorMax = new Vector2(0.5f, 0.5f);
+                break;
+        }
+    }
+    public void SetLeft(RectTransform rt, float left)
+    {
+        rt.offsetMin = new Vector2(left, rt.offsetMin.y);
+    }
+    public void SetRight(RectTransform rt, float right)
+    {
+        rt.offsetMax = new Vector2(-right, rt.offsetMax.y);
+    }
+    public void SetTop(RectTransform rt, float top)
+    {
+        rt.offsetMax = new Vector2(rt.offsetMax.x, -top);
+    }
+    public void SetBottom(RectTransform rt, float bottom)
+    {
+        rt.offsetMin = new Vector2(rt.offsetMin.x, bottom);
+    }
+    public void Set_Left_Right_Top_Bottom(RectTransform rt, float left, float right, float top, float bottom)
+    {
+        SetLeft(rt, left);
+        SetRight(rt, right);
+        SetTop(rt, top);
+        SetBottom(rt, bottom);
+    }
+    #endregion
+
+}
+public enum AnchorPreset
+{
+    Fit,
+    Center,
+    Dynamic,
 }
