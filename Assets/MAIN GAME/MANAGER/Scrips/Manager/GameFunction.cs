@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BestHTTP.JSON.LitJson;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,16 @@ using UnityEngine.UI;
 
 public class GameFunction : Singleton<GameFunction>
 {
-
+    /// <summary>
+    /// Debug
+    /// </summary>
+    public void InputKeycode(KeyCode key, Action action)
+    {
+        if (Input.GetKeyDown(key))
+        {
+            action?.Invoke();
+        }
+    } 
     /// <summary>
     /// Parse Enum
     /// </summary>
@@ -60,6 +70,10 @@ public class GameFunction : Singleton<GameFunction>
             dblSByte = bytes / 1024.0;
         }
         return string.Format("{0:0.##} {1}", dblSByte, Suffix[i]);
+    }
+    public string Parse_String_Json<T>(T data)
+    {
+        return JsonMapper.ToJson(data);
     }
 
     #region RECTSRANSFOM

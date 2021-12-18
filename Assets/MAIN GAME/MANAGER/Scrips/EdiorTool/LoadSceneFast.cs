@@ -20,12 +20,17 @@ public class LoadSceneFast : MonoBehaviour
     {
         OpenScene("Loading");
     }
-    [MenuItem("Open Scene/Main Hall &3")]
+    [MenuItem("Open Scene/Choose Race &3")]
+    public static void OpenScene_ChooseRace()
+    {
+        OpenScene("Choose Race");
+    }
+    [MenuItem("Open Scene/Main Hall &4")]
     public static void OpenScene_MainHall()
     {
         OpenScene("Main Hall");
     }
-    [MenuItem("Open Scene/Battle &4")]
+    [MenuItem("Open Scene/Battle &5")]
     public static void OpenScene_Battle()
     {
         OpenScene("Battle Limitless");
@@ -34,7 +39,7 @@ public class LoadSceneFast : MonoBehaviour
 
 
 
-    [MenuItem("Open Scene/Battle &0")]
+    [MenuItem("Open Scene/Test &0")]
     public static void OpenScene_Test()
     {
         OpenScene("TEST", "Assets/TEST GAME/SCENE/");

@@ -8,19 +8,6 @@ using UnityEngine.SceneManagement;
 
 public class Homemanger : MonoBehaviour
 {
-
-    void ParseConfig_Wave()
-    {
-        string textData = File.ReadAllText(Application.streamingAssetsPath + "/Roster.txt");
-        object[] data_config = new object[2];
-        data_config[0] = CSVParser.Deserialize<Roster>(textData).ToList();
-        data_config[1] = (Action)(() =>
-        {
-
-        });
-        EventManager.Instance.SendEvent(GameConst.GameEvent.Config.ToString(), data_config);
-    }
-
     public void Button_Start()
     {
         // fake char
@@ -36,6 +23,9 @@ public class Homemanger : MonoBehaviour
             SceneManager.LoadScene(GameConst.Scene.Loading);
         });
         EventManager.Instance.SendEvent(GameConst.GameEvent.Home_Login.ToString(), data);
+    }
+    private void Update()
+    {
         
     }
 }

@@ -41,6 +41,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3b742ee876f8ae24cacadb00cf5d2dbd, type: 2}
   - {fileID: 11400000, guid: 068530ff39b71c94cb76212e44a42589, type: 2}
   - {fileID: 11400000, guid: 9b8920c825a7b1a4fb02e9cd649f6733, type: 2}
+  - {fileID: 11400000, guid: 95bb1fdebc370f540a17b3dbe1047128, type: 2}
+  - {fileID: 11400000, guid: 6f12183fc60cdcd458873a7f87e5f611, type: 2}
+  - {fileID: 11400000, guid: de6220b7d14a6e244bdf4b8a6ced0b5f, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -99,6 +102,7 @@ MonoBehaviour:
     - 100001
     - 100002
     - 100003
+    - Config
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 8c7ac5ff00661c2478afce335c9f4584, type: 2}
@@ -126,7 +130,7 @@ MonoBehaviour:
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.String
           m_Data: Library/com.unity.addressables/aa/Android/Android;C:\UNITY\Game
-            Self\Game Developing\Bundle build
+            Self\Game Developing\Bundle build;
           m_Key: ContentRoot
         - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
           m_ClassName: System.Boolean

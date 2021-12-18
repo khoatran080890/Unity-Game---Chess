@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Loading.unity
     guid: be5de1c7f93764e4cb1a387ab995aa65
   - enabled: 1
+    path: Assets/Scenes/Choose Race.unity
+    guid: b1ea7778bade54b4dac8694cbcc27c39
+  - enabled: 1
     path: Assets/Scenes/Main Hall.unity
     guid: 078f3c65cebb2a5439106b9381a54e1a
   - enabled: 1

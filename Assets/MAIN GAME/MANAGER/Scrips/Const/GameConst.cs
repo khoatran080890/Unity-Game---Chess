@@ -14,21 +14,34 @@ public static class GameConst
     {
         public static string Home = "Home";
         public static string Loading = "Loading";
+        public static string ChooseRace = "Choose Race";
         public static string MainHall = "Main Hall";
         public static string Battle_Limitless = "Battle Limitless";
     }
     public static class Addressable_Label
     {
+        public static string Config = "Config";
+        public static string UI = "UI";
         public static string Roster_100001 = "100001";
         public static string Roster_100002 = "100002";
         public static string Roster_100003 = "100003";
     }
+
     public enum GameEvent
     {
-        Loading_nextloadingbar,
+        Loading_nextloadingbar_addressable,
+        Loading_finishconfig_one,
+        Loading_finishconfig_all,
         Home_Login,
 
-        Config,
+        // Choose Race
+        ChooseRace_pick,
+
+        Config_roster,
+        Config_rostertype,
+        Config_missle,
+        Config_formation,
+        Config_race,
     }
 }
 public enum ResultCode

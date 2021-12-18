@@ -17,13 +17,14 @@ public static class CSVParser
             string value = "";
             for (int j = 0; j < txtline.Length; j++)
             {
-                if ((txtline[j] >= 'a' && txtline[j] <= 'z') || (txtline[j] >= '0' && txtline[j] <= '9') || txtline[j] == ',' || txtline[j] == ':')
+                if ((txtline[j] >= 'a' && txtline[j] <= 'z') || (txtline[j] >= '0' && txtline[j] <= '9') || txtline[j] == ',' || txtline[j] == ':' || txtline[j] == ' ')
                 {
                     value += (txtline[j]).ToString();
                 }
-                else if (txtline[j] >= 'A' && txtline[j] <= 'Z')
+                else if (txtline[j] >= 'A' && txtline[j] <= 'Z') 
                 {
-                    value += ((char)(txtline[j] - 'A' + 'a')).ToString();
+                    //value += ((char)(txtline[j] - 'A' + 'a')).ToString();// upper to lower
+                    value += (txtline[j]).ToString(); ;
                 }
                 else // /t
                 {

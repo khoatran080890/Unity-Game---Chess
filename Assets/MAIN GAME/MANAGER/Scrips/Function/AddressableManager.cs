@@ -14,6 +14,7 @@ public class AddressableManager : Singleton<AddressableManager>
     /// </summary>
     public void DownloadAddressable_Remote(string label, Action<AddressableDownLoader> action)
     {
+        Caching.ClearCache();
         Addressables.ClearDependencyCacheAsync(label);
         AddressableDownLoader download = new AddressableDownLoader(label);
         action(download);
